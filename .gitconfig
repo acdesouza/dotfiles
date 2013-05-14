@@ -1,0 +1,20 @@
+[color]
+	ui = true
+
+[user]
+	name = Antonio Carlos da Graça Mota Durão de Souza
+	email = ac.desouza@gmail.com
+
+[diff]
+    external = git_diff_wrapper
+[pager]
+    diff =
+[merge]
+	tool = myvimdiff
+[mergetool "myvimdiff"]
+  ;cmd = mvimdiff $LOCAL $MERGED $REMOTE
+  cmd = vim -f -d \"$LOCAL\" \"$MERGED\" \"$REMOTE\"
+[core]
+	editor = /usr/bin/vim
+[push]
+	default = simple
